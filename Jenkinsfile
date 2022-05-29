@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+        label "master"
+    }
     stages {
         stage ('Clean workspace') {
             steps {
